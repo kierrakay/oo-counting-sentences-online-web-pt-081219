@@ -20,7 +20,7 @@ self.end_with?("!")
 #end
 
 def count_sentences
-      sentence_array = self.split(/[.?!]/)
+    self.split(/[.?!]/)
     sentence_array.delete_if{|sentence| sentence.empty?}
     sentence_array.length
   end
